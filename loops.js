@@ -1,5 +1,5 @@
 // For Looping Tasks
-console.log("For Looping Tasks");
+console.log("For Looping Tasks:");
 console.log(" ");
 {console.log('Task-1:');
 
@@ -82,7 +82,7 @@ console.log(' ');
 
 
 // While Looping Tasks
-console.log("While Looping Tasks");
+console.log("While Looping Tasks:");
 console.log(" ");
 {console.log('Task-1:');
 
@@ -172,4 +172,58 @@ console.log(" ");
         i--;
     }
     console.log("Countdown finished!");
+}
+
+console.log(' ');
+
+
+// Break Tasks using Loops
+console.log('Break:');
+console.log(' ');
+
+{console.log('Task-1:');
+
+    for(let i = 1; i <= 200; i++){
+        if(i >= 100){
+            break;
+        }
+        console.log(i);
+    }
+}
+console.log(' ');
+{console.log('Task-2:');
+
+    let sum = 0;
+    let num = 1;
+    
+    while (num < 100) {
+        sum += num;
+        console.log(`Added Number: ${num}, Current Sum: ${sum}`);
+        
+        if (sum >= 100) {
+            break;
+        }
+        
+        num++;
+    }
+    
+    console.log("Final Sum:", sum);
+    
+}
+console.log(' ');
+{console.log('Task-3:');
+
+    for (let i = 1; i <= 100; i++) {
+        let square = i**2
+        
+        if (square > 100) {  
+            break;
+        }
+
+        if (square > 1) {
+            console.log('Encountered first square number:',square);
+            break;
+        }
+        console.log(square); 
+    }   
 }
